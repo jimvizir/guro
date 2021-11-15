@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면에 꽉찬 비디오 2021-11-01</title>
+    <link rel="showcut icon" href="favicon.ico">    
+    <script src="https://kit.fontawesome.com/9448297042.js" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            margin: 0;
+        }
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            /* width:100%;
+            height: 100%; */
+            min-width: 100%;
+            min-height: 100%;
+            /*
+                min-XXXX : 최소환의 설정값
+                position:fixed가 화면을 잡아주면서 꽉잔화면이 구성됨,
+                스크롤도 없어짐.
+            */
+        }
+        
+        span{
+            position: absolute;
+            top:70% ;
+            left:50% ;            
+            transform: translate(-50%,-50%);
+            font-size: 100px;
+            font: 50px white;
+         }
+    </style> 
+</head>
+<body>
+    <video src="test_video.mp4" autoplay muted ></video>
+    <span>여기에 글자를 쓰면...</span>
+</body>
+</html>

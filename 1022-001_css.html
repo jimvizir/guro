@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang=ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico"> 
+    <title>CSS 2021-10-22</title>
+    <style>
+        p{
+            text-align: justify; /*left right center justify */
+            line-height: 150%; 
+            /*줄간격 1.5 또는 150%, 1.5~ 1.8을 가장 많이 사용,  가독성, 명조체X 고딕체O*/
+        }      
+        #p1{
+            text-shadow: 10px 10px 15px red, -10px -10px 15px blue;
+            /* x, y, blur color 콤버로 계속 추가할수 있다 */
+            font-size: 100px;
+        }
+        #p2{
+            /* spacing css*/
+            font-size: 18px;
+            letter-spacing: 3PX;
+            word-spacing: 50px;
+        }  
+        body{
+            /*브라우저의 마진이 있다. 이부분의 마진을 제거한다.*/
+            margin: 0; 
+            background: url(vizir_001.png) repeat-y;
+            /*
+                background-color, backgroud-image는 에러가 잦으므로 backgroud를 사용
+                no-repeat, repeat-x, repeat-y
+            */
+        }
+        #p3{
+            /* margin */
+            margin: 0;
+        }  
+        #p4{
+            /* margin */
+            margin: 0;
+            background: #000000;
+            color: #ffffff;
+        }  
+        div{
+            /* margin */
+            margin: 0;
+            background: red;
+            width: 200px;
+            height: 200px;
+            /* border-radius: 50%; */
+            /*50% 또는 100px 원이된다*/
+            /* border-radius: 100px 50px 30px 80px;  */
+            /* 
+                각 모서리를 둥굴게 처리한다.
+                top-left top-right bottom-right bottom-left 
+                시계방향으로 적용
+            */
+            /* 
+            border-color: black;
+            border-width: 25px;
+            border-style: solid; 
+
+            3가지를 아래와 같이 축약하여 사용한다.
+            */
+
+            border: 25px dotted gray; /* solid dashed dotted ridge groove inset outset*/
+        }                         
+    </style>
+</head>
+<body>
+    <!--
+    <p id="p1">HTML</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusantium aliquam, optio voluptates quod deleniti reiciendis incidunt. Dignissimos quis blanditiis quo impedit sunt error amet quidem et, recusandae sed suscipit!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus officiis, voluptatum sint dolor et est amet atque obcaecati natus porro architecto facere ea quos exercitationem at tempore placeat ut doloremque.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate reprehenderit sapiente magni perspiciatis debitis. Ullam rerum, nulla quasi quaerat est doloribus dolorum hic beatae delectus expedita sed eaque at consectetur?</p>
+    <p id="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias enim quo odio earum voluptatum dolorem incidunt, quasi repellat deserunt pariatur! Quisquam ut facilis laboriosam maiores illum esse necessitatibus suscipit sunt?
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias enim quo odio earum voluptatum dolorem incidunt, quasi repellat deserunt pariatur! Quisquam ut facilis laboriosam maiores illum esse necessitatibus suscipit sunt?</p>
+    <p id="p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias enim quo odio earum voluptatum dolorem incidunt, quasi repellat deserunt pariatur! Quisquam ut facilis laboriosam maiores illum esse necessitatibus suscipit sunt?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias enim quo odio earum voluptatum dolorem incidunt, quasi repellat deserunt pariatur! Quisquam ut facilis laboriosam maiores illum esse necessitatibus suscipit sunt?</p>    
+    -->
+    <div>
+        <p id="p4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum natus ullam laboriosam eaque enim, soluta non molestiae voluptas pariatur sit fugit earum necessitatibus nulla quidem ad unde quisquam veritatis ab!</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum natus ullam laboriosam eaque enim, soluta non molestiae voluptas pariatur sit fugit earum necessitatibus nulla quidem ad unde quisquam veritatis ab!</p>
+    </div>
+</body>
+</html>

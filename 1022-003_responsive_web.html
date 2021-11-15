@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang=ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico"> 
+    <title>Responsive Web Design 반응형 2021-10-22</title>
+    <style>       
+        body{
+            margin: 0;
+        } 
+        #wrapper {
+            width: 1000px;
+            height: 500px;
+            background: red;
+            margin: 0 auto;
+            /*
+                top right bottom left 순으로 마진을 적용한다.
+                0 auto 0 auto로 설정한 것임
+            */
+        }
+        h1{
+            font-size: 200px;
+            color: black;
+            text-align: center;
+        }
+        @media(max-width:600px){
+            /* 600이하인 경우 아래 속성이 바뀐다*/
+            #wrapper{
+                background:blue;
+            }
+            h1{
+                color:yellow;
+                font-size:100px;
+                text-align: left;
+            }
+        }
+        @media(min-width:1200px){
+            /* 1200이상인 경우  아래 속성이 바뀐다*/
+            #wrapper{
+                background:black;
+            }
+            h1{
+                color:yellow;
+                font-size:300px;
+                text-align: center;
+            }
+        }        
+    </style>
+</head>
+<body>
+    <!-- div#wrapper 젠코딩-->
+    <div id="wrapper">
+        <!-- container wrap-->
+        <h1>HTML</h1>
+    </div>
+</body>
+</html>

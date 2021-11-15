@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면에 꽉찬 사진 2021-11-01</title>
+    <link rel="showcut icon" href="favicon.ico">    
+
+    <style>
+        body{
+            margin: 0;
+        }
+        #div01{
+            position: fixed;
+            background: url("24283C3858F778CA2E.jpg") no-repeat;
+            background-size: cover;
+            /* 
+                중요한 속성임.
+                contain : height에 맞춰서 width를 채우지 않음
+                cover : height에 상관없이 width를 채움
+            */
+            width: 100%;
+            height: 100%;
+        }   
+        
+        span{
+            position: absolute;
+            top:70% ;
+            left:50% ;            
+            transform: translate(-50%,-50%);
+            font-size: 100px;
+            font: 50px bold white;
+         }
+    </style> 
+</head>
+<body>
+    <div id="div01">
+        <span>여기에 문구를 입력합니다.</span>
+    </div>
+</body>
+</html>

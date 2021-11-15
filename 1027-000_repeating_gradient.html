@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico"> 
+    <title>z-index 2021-10-25</title>
+    <style>
+        body{
+            margin:0 auto;
+        }
+        div{
+            background: linear-gradient(to top, red,green 30%, yellow);
+            width: 500px;
+            height: 500px;
+        }   
+        #div1{
+            background: linear-gradient(to right top, red,green 30%, yellow);
+            width: 500px;
+            height: 500px;
+        }   
+        #div2{
+            background: linear-gradient(135deg, red,green 30%, yellow);
+            width: 500px;
+            height: 500px;
+        }   
+        #div3{
+            background: radial-gradient(red,green 30%, yellow);
+            width: 500px;
+            height: 500px;
+        }    
+        #div4{
+            background: radial-gradient(ellipse, red,green 30%, yellow);
+            width: 500px;
+            height: 500px;
+        }   
+        #div5{
+            background: repeating-linear-gradient(to right, red 0%, green 10%, red 20%);
+            width: 500px;
+            height: 500px;
+        }    
+        #div6{
+            background: repeating-linear-gradient(to right, yellow 0px, yellow 20px, blue 40%);
+            width: 500px;
+            height: 500px;
+        }   
+        #div7{
+            background: repeating-radial-gradient(circle, yellow 0px, yellow 20px, blue 40%);
+            width: 500px;
+            height: 500px;
+        }                                                                 
+    </style>
+</head>
+<body> 
+    <div id="div7"></div>
+</body>
+</html>

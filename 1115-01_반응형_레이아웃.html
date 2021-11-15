@@ -1,0 +1,189 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico">
+    <title>반응형 레이아웃 2021-11-15</title>
+    <style>
+        #wrapper {
+            width: 1200px;
+            /* height: 900px; */
+            margin: 0 auto;
+            border: 1px solid black;
+        }        
+        header {
+            height: 100px;
+            background:rgb(94, 159, 173);
+        }
+        nav {
+            position: relative;
+            margin-top: 30px;
+            float: right;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        } 
+        nav ul li {
+            display: inline-block;
+            background: rgb(94, 159, 173);
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            margin: 20px;
+            font-size: 14px;
+            text-align: center;
+            color: white;
+        }
+        article {
+            width: 30%;
+            min-height: 15vh;  
+            /* 
+                100vh, 100vw가 전체화면
+                전체화면의 15%로 이해, 그러나 %개념과는 다르다.
+                - vh 와 vw 는 열려있는 화면 전체의 상대길이이기 때문에 스크롤바를 포함한 길이를 반환
+                1vw = 뷰포트 너비의 1%
+                1vh = 뷰포트 높이의 1%
+                - % 는 창이 중심이 아닌, %를 쓰고 있는 요소의 부모 요소의 길이에 맞게 반환. 또한, 그냥 전체 화면의 %를 쓴다 하더라도 스크롤 바를 포함하지 않은 현재 화면 길이만을 반환.
+            */
+            border:1px dotted black;            
+            background: white;
+            float: left;
+            margin: 10px;
+        }         
+        h2{
+            font-size: 16px;
+        }    
+        dl{
+            font-size: 12px;
+        }                    
+        .dog-docu{
+            clear: both;
+            margin: 0;
+            padding: 0;            
+            border: 1px solid black;
+            background: rgb(146, 192, 93);
+        }                             
+        footer {
+            clear: both;
+            height: 50px;
+            background:rgb(94, 159, 173);
+            padding-top: 20px;
+            color: black;
+        }
+        address {
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+        }   
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        a:link {
+            /* 마우스 링크*/
+            color: black;
+            text-decoration: none;
+            transition: 0.6s;  
+            /* 호버 전에 정의해 줄것 */
+        }
+
+        a:hover{
+            /* 마우스 접근*/
+            color:rgb(252, 252, 252); /* Alpha값을 지정 0.5 = 50%투명도 */
+            text-decoration: none; /*윗줄이 생김,  none, overline(윗줄), underline(아래줄),  line-through(취소선) 
+            */
+        }  
+        @media (max-width:500px){
+            article {
+                float : none; 
+                /* margin:0 auto */
+            }
+        }        
+    </style> 
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">애완견 종류</a></li>
+                    <li><a href="#">입양하기</a></li>
+                    <li><a href="#">건강돌보기</a></li>
+                    <li><a href="#">더불어살기</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h1>애완견 종류(아티클)</h1>
+            <article>
+                <h2>활달한 강아지</h2>
+                <dl>
+                    <dt>요크셔 테리어</dt>
+                    <dd> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi in fugit vero laudantium commodi voluptate at similique, eos dolore tempore iure blanditiis officiis odio 
+                    </dd>
+                    <dt>말티즈</dt>
+                    <dd> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi in fugit vero laudantium commodi voluptate at similique, eos dolore tempore iure blanditiis officiis odio 
+                    </dd>  
+                    <dt>포머 라이언</dt>
+                    <dd> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi in fugit vero laudantium commodi voluptate at similique, eos dolore tempore iure blanditiis officiis odio 
+                    </dd>                                               
+                    <dt>골드 리트리버</dt>
+                    <dd> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi in fugit vero laudantium commodi voluptate at similique, eos dolore tempore iure blanditiis officiis odio 
+                    </dd>                                               
+                </dl>      
+            </article>
+            <article>
+                <h2>온순한 강아지</h2>
+                <dl>
+                    <dt>쉬즈</dt>
+                    <dd> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi in fugit vero laudantium commodi voluptate at similique, eos dolore tempore iure blanditiis officiis odio 
+                    </dd>
+                    <dt>퍼그</dt>
+                    <dd> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi in fugit vero laudantium commodi voluptate at similique, eos dolore tempore iure blanditiis officiis odio 
+                    </dd>
+                    <dt>라브라도 리트리버</dt>
+                    <dd> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi in fugit vero laudantium commodi voluptate at similique, eos dolore tempore iure blanditiis officiis odio 
+                    </dd>
+                </dl>                                       
+            </article>
+            <article>
+                <h2>사납지만 복종적인 강아지</h2>
+                <dl>
+                    <dt>미니어처핀셔</dt>
+                    <dd> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi in fugit vero laudantium commodi voluptate at similique, eos dolore tempore iure blanditiis officiis odio 
+                    </dd>
+                    <dt>푸들</dt>
+                    <dd> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi in fugit vero laudantium commodi voluptate at similique, eos dolore tempore iure blanditiis officiis odio 
+                    </dd>
+                    <dt>폴스테리어</dt>
+                    <dd> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi in fugit vero laudantium commodi voluptate at similique, eos dolore tempore iure blanditiis officiis odio 
+                    </dd>
+                </dl>                             
+            </article> 
+            <div class="dog-docu">  
+                <h2>건강한 강아지는(A side)</h2> 
+                <ul>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora, eum dolores vitae non perferendis, aperiam voluptates sapiente iure libero doloribus nesciunt eaque placeat distinctio modi aut obcaecati eligendi vero!</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora, eum dolores vitae non perferendis, aperiam voluptates sapiente iure libero doloribus nesciunt eaque placeat distinctio modi aut obcaecati eligendi vero!</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora, eum dolores vitae non perferendis, aperiam voluptates sapiente iure libero doloribus nesciunt eaque placeat distinctio modi aut obcaecati eligendi vero!</p>
+                    </li>                                
+                </ul>
+            </div>               
+        </section>     
+
+        <footer>
+            <address>Copyright 2021 vizir cpo., Ltd.</address>
+        </footer>
+    </div>    
+</body>
+</html>

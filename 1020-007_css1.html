@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="KO">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico"> 
+    <title>CSS Cascading Style Sheet 2021-10-20</title>
+    <style>
+        /* ################################### */
+        @font-face {
+                        font-family: 'HSGaeulSenggak20';
+                        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSGaeulSenggak20.woff') format('woff');
+                        font-weight: normal;
+                        font-style: normal;
+        }
+        /*id에 해당 하는 부분에 font-face적용 */
+        #id_font {
+            font-family: 'HSGaeulSenggak20';
+            font-size:20px; 
+        }
+        /* p태그 전체에 font-face 적용*/
+        p {
+            font-family: 'Nanum Pen Script', cursive;
+            font-size:30px;
+        }   
+        /* ################################### */
+
+        h1 {
+            font-size: 60px;
+            color: black;
+            /* ont-style: italic; */
+            font-weight: 600;
+            /* 100~900단계(유료폰트 고려), 400=normal, 600=bold  */
+            font-family: 나눔고딕 ;
+        }
+
+        /* ################################### */
+        /*
+        링크 제어하는 순서데로 정의해 주어야 한다 link > visited > hover > active 
+        */
+        a:link {
+            /* 마우스 링크*/
+            color: #0000ff;
+            text-decoration: none;
+        }
+        a:visited{
+            /* 마우스 방문했던*/
+            color: rgb(255,0,0);
+            text-decoration: none;
+        }
+        a:hover{
+            /* 마우스 접근*/
+            color:rgba(255,0,0,0.5); /* Alpha값을 지정 0.5 = 50%투명도 */
+            text-decoration: none; /*윗줄이 생김,  none, overline(윗줄), underline(아래줄),  line-through(취소선) 
+            */
+        }
+        a:active{
+            /* 마우스 클릭*/
+            color: yellow;
+        }
+        /* ################################### */
+
+    </style>
+    <!--
+        CSS Cascading Style Sheet"
+
+        1. 무조건 소문자로 적는다.
+        2. 속성:속성값;
+        3. 소문자로 작성한다.
+    -->
+</head>
+<body>
+    <h1>스타일시트시작</h1>
+    <h1><a href="#">링크의 스타일 변형</a></h1>
+    <p id="id_font">font-face 스타일 변경 (ID 적용)</p><br>
+    <p id="id_font"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates illo harum sed, alias eos dolore possimus minus, nisi quidem corporis aperiam odit dignissimos unde repellat aut maiores ab? Alias, recusandae!</p>
+    <p>font-face 스타일 변경 (p태그 전체) </p><br>
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates illo harum sed, alias eos dolore possimus minus, nisi quidem corporis aperiam odit dignissimos unde repellat aut maiores ab? Alias, recusandae!</p> 
+	<div style="position: fixed; bottom: 55px; right: 5px;">
+		<!-- 맨위로가기 버튼-->
+		<a href="#top-header">
+		<img src="../images/top.png"  width="50" height="50" title="위로 가기"></a>
+	</div>      
+</body>
+</html>

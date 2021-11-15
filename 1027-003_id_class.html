@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico"> 
+    <title>가상요소2 2021-10-27</title>
+    <style>
+        /* 아이디는 한번만 사용할 수 있다. 여러번쓰면 web표준 위반임*/
+        /* class는 여러번 사용, 코드를 간편하게 하기 위함도 있음 */
+        #wrapper{
+            width: 1200px;
+            height: 1200px;    
+            margin: 0 auto;
+        }
+        #box1{
+
+            background: black;
+        }
+        #box2{
+            background: red;
+        }
+         #box3{
+            background: green;
+        }   
+        #box4{
+            background: cyan;
+        } 
+        #box5{
+            background: purple;
+        }                       
+        .cls001{
+            width: 150px;
+            height: 150px;           
+        }     
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="box1" class="cls001"></div>
+        <div id="box2" class="cls001"></div>
+        <div id="box3" class="cls001"></div>
+        <div id="box4" class="cls001"></div>
+        <div id="box5" class="cls001"></div>
+    </div>
+</body>
+</html>

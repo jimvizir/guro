@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico"> 
+    <title>레이아웃</title>
+    <style>
+        #wrapper {
+            width: 1200px;
+            height: 900px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        header {
+            height: 120px;
+            background:yellow;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #logo {
+            width: 150px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            color: white;
+            background:red;
+            float: left;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+
+        nav {
+            margin-top: 30px;
+            float: right;
+        }
+
+        ul li {
+            display: inline-block;
+            background: red;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            margin: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        article {
+            width: 190px;
+            height: 190px;
+            background: yellow;
+            float: left;
+            margin: 30px;
+        }
+
+        footer {
+            clear: both;
+            height: 100px;
+            background: red;
+            padding-top: 20px;
+            color: white;
+        }
+
+        address {
+            text-align: center;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="logo">LOGO</div>
+            <nav>
+                <ul>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Javascript</li>
+                    <li>jQuery</li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <article> </article>
+            <article> </article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+        </section>
+
+        <footer>
+            <address>경기도 광명시 양지로 16</address>
+        </footer>
+    </div>
+</body>
+</html>

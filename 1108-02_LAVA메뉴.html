@@ -1,0 +1,98 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico">
+    <title>LAVA 메뉴 2021-11-08</title>
+    <style>
+        body{
+            margin: 20px;
+            padding: 20px;
+            font-family: "Arial", 맑음고딕, 돋음, 돋음체;      /* oS 서체가 없는 경우를 위해 순차적 적용*/ 
+        }
+        
+        .container{
+            
+        }
+
+        .nav{
+            position: relative;     /* nav가 기준이됨 */
+            margin: 50px, 0; /* 50, 0, 50, 0*/
+            width: 700px;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .nav a{
+            display: block; /* a는 인라인이므로 */
+            float: left;
+            width: 20%;
+            text-decoration: none;
+            font-size: 14px; 
+            font-weight: 400;  /*숫자로 굵기를 지정 normal사이즈*/
+            color: black;
+            transition: 0.4s;
+            padding: 16px 0 38px 0; /* top right bottom left */
+        }
+        .nav a:hover{
+            color:#8ac007;
+        }
+
+        .nav .effect{
+            position: absolute;
+            /* position 설정, 기준이 nav가 된다. */
+            bottom: 20px;
+            width: 70px;
+            margin-left: -35px; 
+            /* ##### (키포인트 2) 포인트 선(div effect)를 가운데로 맞추기 위해*/
+            height: 2px;
+            background: #8ac007;
+            left: -20%;                  
+            /* ##### (키포인트 2) 처음위치는 오른쪽 -20%에 있어야 함. 안보이게.*/
+            transition: 0.8s;
+        } 
+
+        .nav a:nth-child(1):hover ~ .effect {
+            /* 
+                형제요소를 사용한다. css는 인접의 다음요소만 다룰수 있다. 단점. 스크립트이기때문에 
+            */
+            /* HTML */
+            left: 10%;
+        }
+        .nav a:nth-child(2):hover ~ .effect {
+            /* CSS */
+            left: 30%;
+        }
+        .nav a:nth-child(3):hover ~ .effect {
+            /* Javascript */
+            left: 50%;
+        }
+        .nav a:nth-child(4):hover ~ .effect {
+            /* Protfolio */
+            left: 70%;
+        }
+        .nav a:nth-child(5):hover ~ .effect {
+            /* JQuery */
+            left: 90%;
+        }                                
+    </style> 
+</head>
+<body>
+    <!-- divi.container -->
+    <dic class="container">
+        <!-- divi.nav -->
+        <div class="nav">
+            <!-- a*5 -->
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">Javascript</a>
+            <a href="#">Protfolio</a>
+            <a href="#">JQuery</a>
+            <!-- div.effect -->
+            <div class="effect"></div>
+        </div>
+    </dic>
+</body>
+</html>

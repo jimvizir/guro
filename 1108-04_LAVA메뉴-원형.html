@@ -1,0 +1,158 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico">
+    <title>LAVA 메뉴-2 2021-11-08</title>
+    <style>
+        body{
+            margin: 20px;
+            padding: 20px;
+            font-family: "Arial", 맑음고딕, 돋음, 돋음체;      /* oS 서체가 없는 경우를 위해 순차적 적용*/ 
+        }
+        
+        .container{
+            
+        }
+
+        .nav{
+            position: relative;     /* nav가 기준이됨 */
+            margin: 50px, 0; /* 50, 0, 50, 0*/
+            width: 700px;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .nav a{
+            display: block; /* a는 인라인이므로 */
+            position: relative;
+            /* a 에 relative를 주는 이유:a after, a의 before가 수행되어야 하므로 */
+            float: left;
+            width: 20%;
+            text-decoration: none;
+            font-size: 14px; 
+            font-weight: 400;  /*숫자로 굵기를 지정 normal사이즈*/
+            color: black;
+            transition: 0.4s;
+            padding: 16px 0 38px 0; /* top right bottom left */
+        }
+        .nav a:hover{
+            color:#8ac007;
+        }
+        
+        .nav .effect{
+            position: absolute;
+            transition: 0.6s;
+            left: -20%;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            /* background: #8ac007; */
+            background: darkgray;
+            margin-left: -6px;
+            bottom: 15px;
+            /* 바닥기준으로 위치 조정 */
+        }
+        .nav:after {
+            /* 가상요소를 만든다 수평선 그리기 위해 */
+            content: "";
+            display: block;
+            clear: both;
+            position: absolute;
+            bottom: 20PX;
+            width: 100%;
+            height: 1px;
+            background: #8ac007;
+        }
+        .nav:before {
+            /* 가상요소를 만든다 수평선 그리기 위해 */
+            content: "";
+            display: block;
+            clear: both;
+            position: absolute;
+            bottom: 20PX;
+            width: 100%;
+            height: 1px;
+            background: #8ac007;
+        }
+        .nav a:after{
+            content: "";
+            display: block;
+            clear: both;         
+            /* 위의 3가지는 가상요소의 기본항목 외울것 ㅋㅋ  */
+            position: absolute;
+            /* 기준선이 a이므로 a의 position relative의 absolute가 되어야 함. */
+            left: 50%;
+            bottom: 18px;
+            /* 20px - 2px = 18px  선의 bottom 20px에 대해 -2px을 해야 선의 가운데 걸치므로 */
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            /* 원을 만들기 위해 */
+            background: #8ac007;
+            margin-left: -2px;
+            /* left=50%에 대해 가운데 맞춰야 하므로 마진을 -2px 처리 */
+        }
+        .nav a:after{
+            content: "";
+            display: block;
+            clear: both;         
+            /* 위의 3가지는 가상요소의 기본항목 외울것 ㅋㅋ  */
+            position: absolute;
+            /* 기준선이 a이므로 a의 position relative의 absolute가 되어야 함. */
+            left: 50%;
+            bottom: 18px;
+            /* 20px - 2px = 18px  선의 bottom 20px에 대해 -2px을 해야 선의 가운데 걸치므로 */
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            /* 원을 만들기 위해 */
+            background: #8ac007;
+            margin-left: -2px;
+            /* left=50%에 대해 가운데 맞춰야 하므로 마진을 -2px 처리 */
+        }   
+        .nav a:nth-child(1):hover ~ .effect {
+            /* 
+                형제요소를 사용한다. css는 인접의 다음요소만 다룰수 있다. 단점. 스크립트이기때문에 
+            */
+            /* HTML */
+            left: 10%;
+        }
+        .nav a:nth-child(2):hover ~ .effect {
+            /* CSS */
+            left: 30%;
+        }
+        .nav a:nth-child(3):hover ~ .effect {
+            /* Javascript */
+            left: 50%;
+        }
+        .nav a:nth-child(4):hover ~ .effect {
+            /* Protfolio */
+            left: 70%;
+        }
+        .nav a:nth-child(5):hover ~ .effect {
+            /* JQuery */
+            left: 90%;
+        }                
+    </style> 
+</head>
+<body>
+    <!-- divi.container -->
+    <dic class="container">
+        <!-- divi.nav -->
+        <div class="nav">
+            <!-- a*5 -->
+            <a href="#">HTML</a>
+            <!-- 가상요소는 2개 생성할 수 있음 before, after -->
+            <a href="#">CSS</a>
+            <a href="#">Javascript</a>
+            <a href="#">Protfolio</a>
+            <a href="#">JQuery</a>
+            <!-- div.effect -->
+            <div class="effect"></div>
+        </div>
+    </dic>
+</body>
+</html>

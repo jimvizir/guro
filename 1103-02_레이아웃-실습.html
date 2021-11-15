@@ -1,0 +1,96 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃-실습 2021-11-03</title>
+    <style>
+        #wrapper{
+            width: 1200px;
+            height: 900px;
+            overflow: hidden;       /*길이만큼 늘어나는 속성, 넘치는 부분은 숨기는기능*/
+            border: 1px solid black;
+            margin: 0 auto;     /*top, right, bottom, left순서 0 auto를 주면 가운데 정렬이 됨, 이때 width값이 px값이어야 함.*/
+        }
+        header{
+            height: 120px;
+            background: yellow;
+        }
+        #logo{
+            width: 150px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            color: white;
+            background:red;
+            float: left;
+            margin-top: 20px;
+            margin-left: 40px;            
+        }
+        nav {
+            margin-top: 30px;
+            float: right;
+            border: 1px solid black;        /*디버그를 위해 박스를 그려본다*/
+        }        
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            display: inline-block;          /* 블럭의 개념이지만 한줄에 표현하기 위해*/
+            background: black;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            margin: 20px;
+            text-align: center;
+            color: white;
+        }
+        article{
+            width: 190px;
+            height: 190px;
+            background: yellow;
+            float: left;
+            margin: 30px;
+        }
+        footer{
+            clear: both;
+            height: 100px;
+            background: red;
+            padding-top: 20px;
+            color: white;
+        }
+        address{
+            text-align: center;
+            font-style: normal;
+        }        
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="logo">logo</div>
+            <nav>
+                <ul>
+                    <li>HTML</li>
+                    <li>JAVA</li>
+                    <li>PHP</li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>                        
+        </section>
+        <footer>
+            <address>서울시 구로구 고척동 중앙로</address>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* charset은 필수 기재 사항 - 웹표준 */
+/* 위부스타일쉬트사용시 style 태그를 기재하지 않는다 */
+
+body{
+    font-size: 15px;
+    margin: 0 auto;  /* 가운데 정렬 */    
+}
+#box1{
+    background: black;
+}
+#box2{
+    background: red;
+}
+ #box3{
+    background: green;
+}   
+#box4{
+    background: cyan;
+} 
+#box5{
+    background: purple;
+}                       
+.cls001{
+    width: 150px;
+    height: 150px;           
+}  

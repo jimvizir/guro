@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang=ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico"> 
+    <title>Responsive Web Design 반응형 2021-10-22</title>
+    <style>    
+        /*
+            CSS의 난해한 부분
+            포지션      position
+            플롯        float
+            디스플레이  display    
+            
+            포지션의 relative는 absolute와 함께 쓰였을때 absolute는 부모나 조상요소중의 relative값을 가지 요소안에서 움직인다, 즉 좌표값을 가지게 된다.
+            * absolute가 단독으로 사용시에는 브라우저 기준으로 적용된디다.
+        */    
+        body{
+            margin: 0;
+        } 
+        p{
+            padding: 10px;
+            /*padding은 안쪽에서 부터의 마진입니다.*/
+            /*마진은 바깥쪽에서의 마진*/
+            width:150px;
+            height:150px;
+            background: yellow;
+
+        }
+        #wrapper{
+            width:500px;
+            height:500px;
+            position:relative;
+            border:2px solid black;
+        }
+        #box1{
+            position:absolute;
+            top:0;
+            left:0;
+            width:50px;
+            height:50px;
+            background: red;
+        }
+        #box2{
+            position:absolute;
+            top:0;
+            right:0;
+            width:50px;
+            height:50px;
+            background: red;
+        }   
+        #box3{
+            position:absolute;
+            bottom:0;
+            right:0;
+            width:50px;
+            height:50px;
+            background: red;
+        }     
+        #box4{
+            position:absolute;
+            bottom:0;
+            left:0;
+            width:50px;
+            height:50px;
+            background: red;
+        }         
+        #box5{
+            position:absolute;
+            top:100px;
+            left:100px;
+            width:50px;
+            height:50px;
+            background: red;
+        }                      
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, fugit provident. Enim quaerat libero repellendus  </p>
+    <div id="wrapper">  <!--부모-->
+        <div id="box1">1</div> <!--자식1-->
+        <div id="box2">2</div> <!--자식2-->
+        <div id="box3">3</div> <!--자식3-->
+        <div id="box4">4</div> <!--자식4-->
+        <div id="box5">5</div> <!--자식5-->
+    </div>
+</body>
+</html>

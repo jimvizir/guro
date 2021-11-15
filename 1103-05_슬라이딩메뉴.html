@@ -1,0 +1,61 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu 2021-11-03</title>
+    <style>
+        .cls001{
+            list-style-type: none;
+        margin: 0;
+        padding: 0;
+        }
+        .cls001 > li{       /*자식선택자에게 속성 부여- 브라우저의 기능 부족으로 하단 li까지 속성이 먹음 어쩔수 없음*/
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: darkorange;
+            border: 1px solid black;
+        }
+        .cls001 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .cls001 ul li{
+            width: 150px;
+            height: 0;
+            font-size: 0;
+            opacity: 0;                 /*선을 지우기 위해 사용, height가 0이므로 공간을 차지하지 않는다.*/
+            line-height: 40px;
+            text-align: center;
+            background: darkorange;
+            border: 1px solid black;
+            transition: 0.6s;
+        }       
+        .cls001 li:hover ul li {
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 14px;
+            opacity: 1;
+            background: darkorange;
+            border: 1px solid black;
+            margin-top: -1px;
+        }  
+    </style>
+</head>
+<body>
+    <ul class="cls001">
+        <li>HTML5
+            <ul>
+                <li>Photoshop</li>
+                <li>Illustratoe</li>
+                <li>JQuery</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

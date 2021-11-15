@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--
+    접근성/검색 고려
+    en : 영어
+    jp : 일본
+    zh : 중국
+    de : 독일
+-->
+<head>
+    <meta charset="UTF-8">  <!-- 문자 세팅 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        제목
+    -->
+    <title>오늘은 개강일</title> 
+    <!--
+        Favicon 구성 
+        link tab키,  favicon 설정(showcut icon) favicon.cc에서 작성할 수 있음 
+    -->
+    <link rel="showcut icon" href="favicon.ico">  
+    <!--
+        https://fontawesome.com/ vizir@naver.com / ldk00350 폰트어썸에서 부여받은 키를 입력한다.
+        CDN 방식을 이용 Contents Delivert Network Key Code를 입력합니다.
+    -->
+    <!--
+        <script src="https://kit.fontawesome.com/80df5579fe.js" crossorigin="anonymous"></script>
+    -->
+    
+    <script src="https://kit.fontawesome.com/9448297042.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- 
+        젠코딩(zen coding)
+        table>tr*5>td*4 + 엔터
+
+        숫자 속성값은 단위가 px (생략함) 
+
+        css = Cascading style sheet 아래로 흐른다. 
+        딩벳폰트.. 각각의 글자를 타이핑하면 그림이 타이핑되는 형태의 폰트
+
+    -->
+    <table border="1" width="400" height="300" bgcolor="yellow">
+        <tr>
+            <td rowspan="3"></td>
+            <td></td>
+            <td><i class="fab fa-facebook-square"></i><i class="fab fa-instagram"></i></td>
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td><i class="fab fa-facebook-square"></i><i class="fab fa-instagram"></i></td>
+            <!--폰트어썸을 검색-->
+        </tr>
+        <tr>
+            <td bgcolor="orange"><i class="fab fa-facebook-square"></i><i class="fab fa-instagram"></i></td>
+        </tr>
+    </table> 
+    <!--
+        block과 inline
+        block : 한줄을 다 잡아먹는다.
+        inline : 한줄에 여러게의 태그를 넣을수 있음
+    -->
+    <hr> block <br> 
+    <h1>h1 태그는 무엇일까요?</h1> block <br>
+    <i>이태릭체</i><i>입니다.</i> inline <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, accusantium eius? Tempore praesentium quisquam nobis necessitatibus, ad inventore omnis facilis. Reprehenderit temporibus asperiores ipsam nesciunt nulla quod blanditiis, impedit doloremque!</p>홍길동
+
+</body>
+</html>

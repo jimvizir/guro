@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="KO">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico"> 
+    <title>맵링크</title>
+    <!--
+        이미지에 영역별 링크를 정의하는 법
+        usemap에 정의한 이미지명을 name과 id에 정의한다.
+
+        shape : circel / rect / poly
+        coords : circle (x, y, 반지름)
+                 rect (x1,y1, x2,y2, x3,y3, x4,y4)
+                 poly (각 변곡점마다 x,y좌표)
+
+    -->
+</head>
+<body>
+    <img src="vizir_001.png" usemap="#vizir" alt="" width="500" height="700">
+
+    <map name="vizir" id="vizir">
+        <area shape="rect" coords="60,60, 250,200" href="http://naver.com" alt="area1">
+        <area shape="circle" coords="270,350, 130" href="http://nate.com" alt="area2">  
+        <area shape="poly" coords="50,450, 280,400, 400,470, 150, 470" href="http://daum.net" alt="area2">        
+    </map>
+</body>
+</html>

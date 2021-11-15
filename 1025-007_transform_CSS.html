@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico"> 
+    <title>z-index 2021-10-25</title>
+    <style>
+        body{
+            margin:0 auto;
+        }
+        div{
+            width: 150px;
+            height: 150px;
+            background: red;
+            transition: 0.6s;   /*hover가 발생하기 전에 기술해야한다.*/
+        }   
+        div:hover{
+            transform: translatex(120px);
+            /* transform: skew(-45deg); */
+            /* transform: rotate(90deg); */
+            /* transform:scale(1.5); */
+        }
+    </style>
+</head>
+<body> 
+    <div> </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico">
+    <title>LAVA 메뉴 2021-11-08</title>
+    <style>
+        body{
+            margin: 20px;
+            padding: 20px;
+            font-family: "Arial", 맑음고딕, 돋음, 돋음체;      /* oS 서체가 없는 경우를 위해 순차적 적용*/ 
+        }
+        .nav{
+            position: relative;
+            margin: 50px 0;
+            width:  700px;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid black;
+
+        }
+
+        .nav a{
+            display: block;
+            float: left;
+            width: 20%;
+            text-decoration: none;
+            font-size: 14px;
+            color: black;
+            font-weight: 400;
+            transition: 0.2s;
+            padding: 16px 0 32px 0;
+        }
+
+        .nav a:hover{
+            color: rgb(97, 47, 11);
+        }
+
+        .nav .effct{
+            position:   absolute;
+            bottom: 20px;
+            width: 70px;
+            height: 2px;
+            background: chocolate;
+            left: -20px;
+            margin-left: -35px; 
+            transition: 0.8s;
+        }
+        .nav a:nth-child(1):hover ~ .effect {
+            /* 
+                형제요소를 사용한다. css는 인접의 다음요소만 다룰수 있다. 단점. 스크립트이기때문에 
+            */
+            /* HTML */
+            left: 10%;
+        }
+        .nav a:nth-child(2):hover ~ .effect {
+            /* CSS */
+            left: 30%;
+        }
+        .nav a:nth-child(3):hover ~ .effect {
+            /* Javascript */
+            left: 50%;
+        }
+        .nav a:nth-child(4):hover ~ .effect {
+            /* Protfolio */
+            left: 70%;
+        }
+        .nav a:nth-child(5):hover ~ .effect {
+            /* JQuery */
+            left: 90%;
+        }            
+                                
+    </style> 
+</head>
+<body>
+    <!-- divi.container -->
+    <div class="container">
+        <!-- divi.nav -->
+        <div class="nav">
+            <!-- a*5 -->
+            <a href="">HTML</a>
+            <a href="">CSS</a>
+            <a href="">JAVA</a>
+            <a href="">PHP</a>
+            <a href="">C++</a>
+            <!-- div.effect -->
+            <div class="effect"></div>
+        </div>
+    </div>
+</body>
+</html>

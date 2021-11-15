@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu1 2021-10-27</title>
+    <link rel="showcut icon" href="favicon.ico">    
+    <style>
+        .menu1{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu1 > li{
+            width: 150px;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            background: #222;
+            color:white;
+            float: left;
+        }
+        .menu1 li ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }  
+        .menu1 li ul li{
+            width: 150px;
+            text-align: center;
+            height: 30px;
+            line-height:30px;
+            background: #ccc;
+            border-bottom: 1px solid black;
+            display: none; 
+        }   
+        .menu1 li:hover ul li {
+            display: block;
+        }             
+    </style> 
+</head>
+<body>
+    <ul class="menu1">
+        <li>HTML
+            <ul>
+                <li>스타일</li>
+                <li>웹표준</li>
+                <li>마크업</li>
+            </ul>
+        </li>
+        <li>HTML
+            <ul>
+                <li>스타일</li>
+                <li>웹표준</li>
+                <li>마크업</li>
+            </ul>
+        </li> 
+        <li>HTML
+            <ul>
+                <li>스타일</li>
+                <li>웹표준</li>
+                <li>마크업</li>
+            </ul>
+        </li>               
+    </ul>
+</body>
+</html>

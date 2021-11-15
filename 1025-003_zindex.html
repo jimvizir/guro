@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico"> 
+    <title>z-index 2021-10-25</title>
+    <style>
+        body{
+            margin: 100px;
+        }
+        #wraper{
+            width: 600px;
+            height: 600px;
+            border: 1px solid black;
+            margin:0 auto;
+            position: relative;
+        }
+        #box1{
+            position:absolute;
+            width: 100px;
+            height: 100px;
+            background: red;
+            top:50px;
+            left:50px;
+            z-index: 999;       /* positio(필수))을 주고 z-index를 줘야한다. 낮은 값이 바닥에 깔림. 일반적으로 방해받지 않기 위해 큰값을 기재한다.*/
+        }
+        #box2{
+            position:absolute;
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            top:90px;
+            left:70px;
+            z-index: 2;
+        }
+        #box3{
+            position:absolute;
+            width: 100px;
+            height: 100px;
+            background: orange;
+            top:100px;
+            left:90px;
+            z-index: 1;
+        }                
+    </style>
+</head>
+<body> 
+    <div id="wraper">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="KO">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico"> 
+    <title>Document</title>
+    <style>
+        @font-face {
+                        font-family: 'HSGaeulSenggak20';
+                        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSGaeulSenggak20.woff') format('woff');
+                        font-weight: normal;
+                        font-style: normal;
+        }
+        #id_font {
+            font-family: 'HSGaeulSenggak20';
+            font-size:20px; 
+        }
+        .class_font {
+            font-family: 'HSGaeulSenggak20';
+            /* font-size:30px; */
+        }        
+        p {
+            font-family: 'Nanum Pen Script', cursive;
+            font-size:30px;
+        } 
+    </style>
+    <!--구글 웹폰트 적용 "구글웹폰트 검색"-->
+    <!--https://noonnu.cc/index 웹폰트 사이트-->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--       
+        form 태그 : 서버로 전송되어지는 부분이 태그는 모두 form태그안에 기술한다.
+    -->
+    <form action="login.php" >
+        <input type="email" required placeholder="abc@abc.com"><br> 
+        <input type="email" required><br> 
+        <input type="url" required placeholder="http://www.abc.com"><br> 
+        <input type="url" required><br> <!--http://ww까지만 체크한다. 메일보다는 약하다--> 
+        <input type="submit" class="class_font" >
+        <p id="id_font">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates illo harum sed, alias eos dolore possimus minus, nisi quidem corporis aperiam odit dignissimos unde repellat aut maiores ab? Alias, recusandae!</p>
+        <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates illo harum sed, alias eos dolore possimus minus, nisi quidem corporis aperiam odit dignissimos unde repellat aut maiores ab? Alias, recusandae!</p>        
+    </form>
+</body>
+</html>

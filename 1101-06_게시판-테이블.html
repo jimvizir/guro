@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판-테이블 2021-11-01</title>
+    <link rel="showcut icon" href="favicon.ico">    
+
+    <style>
+        body{
+            margin: 0;
+        }
+        #wrapper{
+            width: 1200px;
+            height: 800px;
+            border: 1px solid black;
+            margin: 0 auto;
+            padding: 50px;
+        }   
+        
+        table {
+            width:1000px;
+            height: 400px;
+            margin: 0 auto;
+            border-collapse: collapse; /*collapse, separate 선을 합쳐야 하므로*/
+        }
+
+        td, th{     /*동일속성을 주는 방법- 그룹선택자*/
+            border: 1px solid black;
+        }
+
+        tr{
+            height: 40px;
+        }
+        tr:nth-child(2n+1){     /*odd를 써도 됨*/
+            background: rgb(225, 232, 210);
+        }
+        
+        #td_no{
+            width:100px;
+            text-align: center;
+        }
+        #td_no1{
+            text-align: center;
+        }        
+        #td_title{
+            width:600px;
+            text-align: center;
+        }  
+        #td_writer{
+            width:200px;
+            text-align: center;
+        }
+        #td_counter{
+            width:100px;
+            text-align: center;
+        }        
+        
+        tr:first-child{
+            background: rgb(190, 187, 232);
+        }     
+        tr:last-child{
+            background: rgb(190, 187, 232);
+        }
+    </style> 
+</head>
+<body>
+    <div id="wrapper">
+        <table>
+            <tr>
+                <th id="td_no">번호</td>
+                <th id="td_title">제목</td>
+                <th id="td_writer">글쓴이</td>
+                <th id="td_counter">조회수</td>
+            </tr>
+            <tr>
+                <td id="td_no">1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="td_no">2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="td_no">3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="td_no">4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="td_no">5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="td_no">6</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="td_no">7</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="td_no">8</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="td_no"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

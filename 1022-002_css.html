@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang=ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico"> 
+    <title>CSS 2021-10-22</title>
+    <script src="https://kit.fontawesome.com/9448297042.js" crossorigin="anonymous">
+    </script>
+    <style>     
+        /*
+            CSS의 난해한 부분
+            포지션      position
+            플롯        float
+            디스플레이  display               
+        */    
+        div{
+            /* margin */
+            margin: 0;
+            background: red;
+            width: 200px;
+            height: 200px;
+
+            box-shadow: 10px 10px 15px red;
+            /*font-shadow와 동일*/
+        }   
+        p{
+            /* font-variant: small-caps; */
+             /*작은 대문자, 속성이 1개밖에 없다. */
+             text-transform: capitalize;
+             /* 
+                capitalize(첫글자 대문자) uppercase lowercase
+             */
+        }
+        i{
+            color: red;
+            font-size:120px;
+            transition: 0.8s;
+            /*
+            08초 동안의 에니메이션 효과
+            */
+        }
+        i:hover {
+            color:dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <i class="fab fa-facebook-f"></i>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum necessitatibus perferendis doloribus architecto molestiae alias iste nemo nesciunt, ea eligendi tempore quibusdam, officia quas corrupti asperiores corporis, ducimus nostrum iusto!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum necessitatibus perferendis doloribus architecto molestiae alias iste nemo nesciunt, ea eligendi tempore quibusdam, officia quas corrupti asperiores corporis, ducimus nostrum iusto!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum necessitatibus perferendis doloribus architecto molestiae alias iste nemo nesciunt, ea eligendi tempore quibusdam, officia quas corrupti asperiores corporis, ducimus nostrum iusto!</p>
+
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum natus ullam laboriosam eaque enim, soluta non molestiae voluptas pariatur sit fugit earum necessitatibus nulla quidem ad unde quisquam veritatis ab!</p>
+    </div>
+</body>
+</html>

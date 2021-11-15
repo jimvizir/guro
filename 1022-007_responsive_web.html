@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico"> 
+    <title>Responsive Web Design 반응형 2021-10-22</title>
+    <style>       
+        body{
+            margin: 0;
+        } 
+        #wrapper{
+            width:500px;
+            height:500px;
+            position:relative; 
+            border:2px solid black;
+        }
+        #box1{
+            position:relative;
+            float: left;
+            width:150px;
+            height:150px;
+            background:blue;
+        }  
+        #box2{
+            position:relative;
+            float: left;
+            top:50px;
+            right:50px;
+            background:yellow;
+            width:70px;
+            height:70px;            
+        }                               
+    </style>
+</head>
+<body> 
+    <div id="box1">1</div> 
+    <div id="box2">1</div> <!--relative가 겹쳤을경우 좌표값이 있으면 인접 relative를기준으로 좌표를 잡는다. 단, float을 써야한다.-->    
+    <!--좌표값이 없는 경우에는 붙어버린다.-->
+</body>
+</html>

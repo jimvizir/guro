@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면에 고정된 원형아이콘-스크롤버튼 2021-11-01</title>
+    <link rel="showcut icon" href="favicon.ico">    
+    <script src="https://kit.fontawesome.com/9448297042.js" crossorigin="anonymous"></script>
+
+    <style>
+        div {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border:1px solid ;
+            position: fixed;
+            right:50% ;
+            bottom:15% ;
+            text-align: center;
+            font-size: 16px;
+        } 
+        body, html {
+            scroll-behavior: smooth;
+            height: 1000px;
+        }
+
+        p{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border:1px solid ;
+            position: fixed;
+            /* relative를 대신한다. */
+            right:20% ;
+            bottom:15% ;
+            cursor: pointer;
+        }
+        i {
+            font-size : 20px;
+            position: absolute;
+            top:30% ;
+            left:50% ;            
+            transform: translate(-50%,-50%);
+            /*
+                transform: translate(-50%,-50%)
+                top 50, left 50은 상단 모서리 좌표이므로 위치를 조정해 주어야 한다.
+                x축으로 이동, y축으로 이동시킨다.
+            */
+         }
+         span{
+            position: absolute;
+            top:70% ;
+            left:50% ;            
+            transform: translate(-50%,-50%);
+         }
+
+         a{
+             text-decoration: none;
+             color: dodgerblue;
+         }
+
+    </style> 
+</head>
+<body>
+    <div>
+		<!-- 맨위로가기 버튼-->
+        <a href="#">
+            <i class="fas fa-arrow-up" fontasome></i>
+        </a>
+        <span>DIV</span>
+		<!-- <a href="#top-header">
+            <i class="fab fa-facebook-square" fontasome></i>
+        </a>         -->
+    </div>
+    <p>
+        <a href="#">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        <span>TOP</span>
+    </p>
+</body>
+</html>

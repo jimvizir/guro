@@ -1,0 +1,31 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico">
+    <title>Cubic-Bezier 2021-11-03</title>
+    <style>
+        div{
+            width: 120px;
+            height: 120px;
+            background: dodgerblue;
+            /* transition: 1s cubic-bezier(.84,-0.7,.42,1.28); */
+            transition: 1s cubic-bezier(.73,.34,.11,.7);
+            /* transition시간뒤에 해당 부분을 넣어주면 됨 */
+        }
+
+        /* 애니메이션에도 동일하게 적용할 수 있음 */
+        /* animation-timing-function: cubic-bezier(.73,.34,.11,.7) */
+        div:hover{
+            /* lvha */
+            transform: translateX(300px);
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

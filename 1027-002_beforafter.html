@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico"> 
+    <title>가상요소2 2021-10-27</title>
+    <style>
+        p{
+            width: 250px;
+            height: 200px;
+            border: 1px solid black;    /*축약형*/
+        }
+        /* content를 앞뒤에 넣기위한 before after를 사용
+           content는 필수 항목임 */
+        /* p:before{
+            content:"앞에 글을 씁니다";     /*구성요소가 세트로 구성된다*/
+        /*    display: block;
+            clear: both;
+        } */
+        p:before{
+            content:"";     /*content를 공백으로 나두고 속성을 난든다,*/
+            display: block;
+            clear: both;
+            width: 350px;
+            height: 25px;
+            background: darkcyan;    /*축약형*/
+        }        
+        p:after{
+            content:"";     /*content를 공백으로 나두고 속성을 난든다,*/
+            display: block;
+            clear: both;
+            width: 350px;
+            height: 25px;
+            background: darkcyan;    /*축약형*/
+        }  
+    </style>
+</head>
+<body> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nisi odit nesciunt laboriosam fuga. Velit magni in repudiandae officia animi amet aperiam maiores nesciunt magnam fuga! Ad voluptatem atque et.</p>
+</body>
+</html>

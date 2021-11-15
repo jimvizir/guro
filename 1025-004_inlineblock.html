@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="showcut icon" href="favicon.ico"> 
+    <title>z-index 2021-10-25</title>
+    <style>
+        body{
+            margin:0 auto;
+        }
+        #box2{
+            opacity: 0; /*공간을 차지한다.*/
+            /* visibility: hidden;  /*공간을 차지한다.*/
+            
+        }
+        #box3{
+            display: none;  /*공간을 차지하지 않는다.*/
+        }   
+        input{
+            width: 300px;
+            height: 200px;
+        }             
+    </style>
+</head>
+<body> 
+    <img src="vizir_001.png" alt=""><img src="vizir_001.png" alt="" id="box2"><img src="vizir_001.png" alt=""><img src="vizir_001.png" alt="" id="box3"><img src="vizir_001.png" alt="">
+    <!--img태그는 inline-block이다. width와 height를 줄수 잇다. 인라인 개념이면서 특이한 태그임.-->
+    <br>
+    <input type="text"> <input type="text"> <input type="text">
+</body>
+</html>
